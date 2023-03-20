@@ -2,7 +2,7 @@
 /**
  * main - prints the alphabet in lowercase,
  * and then in uppercase, followed by a new line.
- * return 0
+ * return: 0
  */
 int main(void)
 {
