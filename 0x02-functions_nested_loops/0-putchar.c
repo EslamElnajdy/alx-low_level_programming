@@ -1,9 +1,8 @@
 #include "main.h"
-/*
- * main - prints _putchar, followed by a new line
- * Ruturn: 0
- */
-
+/** 
+* main - prints _putchar, followed by a new line
+* Ruturn: 0
+*/
 int main(void)
 {
 	_putchar('_');
