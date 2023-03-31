@@ -7,17 +7,17 @@
  *
  * Return: Lowercase changed to uppercase of the string
  */
-char *string_toupper(char *he)
+char *string_toupper(char *hi)
 {
 	int index = 0;
-	int de = 'a' - 'A';
+	int desp = 'a' - 'A';
 
-	for (index = 0; he[index] != '\0'; ++index)
+	for (index = 0; hi[index] != '\0'; ++index)
 	{
-		if (he[index] >= 'a' && he[index] <= 'z')
+		if (hi[index] >= 'a' && hi[index] <= 'z')
 		{
-			he[index] = he[index] - de;
+			hi[index] = hi[index] - desp;
 		}
 	}
-	return (he);
+	return (hi);
 }
