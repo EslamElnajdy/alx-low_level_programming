@@ -20,5 +20,4 @@ char *string_toupper(char *h)
 		}
 	}
 	return (h);
-
 }
