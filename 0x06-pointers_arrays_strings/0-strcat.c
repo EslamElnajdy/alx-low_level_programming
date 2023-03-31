@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strcat - This function appends the src string to the dest string
  * @dest: the first string
@@ -22,5 +21,5 @@ char *_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
-	return dest;
+	return (dest);
 }
