@@ -6,9 +6,13 @@
  */
 int _sqrt_recursion(int n)
 {
-	int a = n ** (1/2);
+	int a = 0;
 
-	if (a * a = n)
-		return (a);
+	while (a < n)
+	{
+		if (a * a == n)
+			return a;
+		a++;
+	}
 	return (-1);
 }
