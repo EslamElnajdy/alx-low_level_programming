@@ -24,7 +24,7 @@ int com(char *n, int k)
 		return (0);
 	if (*n == 0)
 		return (1);
-	return (com(a + 1,l - 2));
+	return (com(n + 1,k - 2));
 }
 /**
  * is_palindrome - checks if a string is a palindrome
