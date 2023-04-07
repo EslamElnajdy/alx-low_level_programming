@@ -8,7 +8,7 @@
 int len(char *a, int b)
 {
 	if (*a == 0)
-		return (l + 1);
+		return (b - 1);
 	return (len(a + 1, b + 1));
 }
 /**
@@ -20,7 +20,7 @@ int len(char *a, int b)
 
 int com(char *n, int k)
 {
-	if (*n != *(n + k)
+	if (*n != *(n + k))
 		return (0);
 	if (*n == 0)
 		return (1);
