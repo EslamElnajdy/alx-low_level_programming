@@ -1,18 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiplies two numbers
  * @argc: number of arguments
  * @argv: array
- * Return: 0
+ * Return:0
  */
 int main(int argc, char *argv[])
 {
-	if (argc > 1)
+	int i, j;
+
+	if (argc == 1 || argc == 2)
 	{
-		printf("%s\n", argv[1] * argv[2]);
-	}else
-	{
-		printf("%s\n","Error");
+		printf("Error\n");
+		return (1);
 	}
+	else
+	{
+		j = 1;
+
+		for (i = 1; i < 3; i++)
+			j *= atoi(argv[i]);
+
+		printf("%d\n", j);
+	}
+
 	return (0);
-}     
+}
