@@ -3,11 +3,13 @@
  * main - print the number of arguments
  * @argc: number of arguments
  * @argv: array
+ * Return: 0
  */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	if (*argv)
 	{
 		printf("%d\n", argc - 1);
 	}
+	return (0);
 }
