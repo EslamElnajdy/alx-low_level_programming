@@ -1,5 +1,8 @@
 #include <stdlib.h>
 /**
+ * malloc_checked - fuction return a pointer
+ * @b: input
+ * Return: the pointer
  */
 
 void *malloc_checked(unsigned int b)
