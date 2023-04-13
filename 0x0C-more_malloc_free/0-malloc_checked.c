@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.h"
 /**
  * malloc_checked - fuction return a pointer
  * @b: input
@@ -10,7 +11,7 @@ void *malloc_checked(unsigned int b)
 	void *ptr;
 
 	ptr = mallac(b);
-	if (ptr == Null)
+	if (ptr == NULL)
 	{
 		exit(98);
 	}
