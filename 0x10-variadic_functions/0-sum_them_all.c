@@ -2,7 +2,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 /**
- * sum_them_all - sum all arg
+ * sum_them_all - check the code for Holberton School students.
  * @n: number
  * Return: sum
  */
