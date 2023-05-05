@@ -8,7 +8,8 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0;
+	int i = 0, base = 1;
+	unsigned int res = 0;
 	
 	if (b == NULL)
 	{
@@ -20,6 +21,11 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		i++;
 	}
-    
-	return (strtol(b, NULL, 2));
+	while (i >= 0)
+	{
+		res += ((b[i] - '0') * base);
+		base *= 2;
+		i--;
+	}
+	return (res);
 }
