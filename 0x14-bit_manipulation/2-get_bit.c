@@ -8,19 +8,20 @@
  *
  * Return: value of the bit.
  */
-
 int get_bit(unsigned long int n, unsigned int index)
 {
-    int rem;
-    int arr[31];
-    int i = 0;
-    while (n)
-    {
-        rem = n % 2;
-        n = n / 2;
-        arr[i] = rem; 
-        i++;
-    }
-    return (arr[index]);
+	unsigned int i;
 
+	if (n == 0 && index < 64)
+		return (0);
+
+	for (i = 0; i <= 63; n >>= 1, i++)
+	{
+		if (index == i)
+		{
+			return (n & 1);
+		}
+	}
+
+	return (-1);
 }
