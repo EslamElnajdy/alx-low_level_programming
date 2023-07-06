@@ -3,24 +3,24 @@
 /**
  * binary_to_uint - converts a binary number to an
  * unsigned int.
- * @b: binary.
+ * @b: binary string.
  *
  * Return: unsigned int.
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int ui;
-	int len, base_two;
+	unsigned int uint;
+	int len, base;
 
 	if (!b)
 		return (0);
 
-	ui = 0;
+	uint = 0;
 
 	for (len = 0; b[len] != '\0'; len++)
 		;
 
-	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
+	for (len--, base = 1; len >= 0; len--, base *= 2)
 	{
 		if (b[len] != '0' && b[len] != '1')
 		{
@@ -29,9 +29,9 @@ unsigned int binary_to_uint(const char *b)
 
 		if (b[len] & 1)
 		{
-			ui += base_two;
+			ui += base;
 		}
 	}
 
-	return (ui);
+	return (uint);
 }
