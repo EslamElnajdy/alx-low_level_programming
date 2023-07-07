@@ -3,10 +3,10 @@
 
 /**
   * flip_bits - function 
-  * @n: number
-  * @m: number
+  * @n: number1
+  * @m: number2
   *
-  * Return: eturns the number of bits.
+  * Return: the number of bits.
   */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
