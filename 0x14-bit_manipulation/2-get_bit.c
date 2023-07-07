@@ -4,6 +4,7 @@
  * get_bit - return the value
  * @n: number
  * @index: number
+ *
  * Return: value of index
  */
 int get_bit(unsigned long int n, unsigned int index)
