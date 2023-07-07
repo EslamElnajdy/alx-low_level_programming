@@ -9,16 +9,24 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int rem = 0;
-	int arr[31];
-	int i = 0;
+	unsigned int com = 0;
 
 	while (n)
 	{
-		rem = n % 2;
+		if (com == index)
+		{
+			if (n % 2)
+				return (1);
+			else
+				return (0);
+		}
+
 		n = n / 2;
-		arr[i] = rem;
-		i++;
+		com++;
 	}
-	return (arr[index]);
+
+	if (index > comp && index < 63)
+		return (0);
+
+	return (-1);
 }
