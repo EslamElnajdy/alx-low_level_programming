@@ -4,6 +4,8 @@
  * set_bit - set the value
  * @n: number
  * @index: number
+ *
+ * Return: 1 if it worked, or -1 if an error occurred
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
