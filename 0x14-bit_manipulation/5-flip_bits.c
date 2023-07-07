@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-  * flip_bits - function return number 
+  * flip_bits - function return number
   * @n: number1
   * @m: number2
   *
