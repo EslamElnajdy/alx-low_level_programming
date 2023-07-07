@@ -25,7 +25,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		com++;
 	}
 
-	if (index > comp && index < 63)
+	if (index > com && index < 63)
 		return (0);
 
 	return (-1);
