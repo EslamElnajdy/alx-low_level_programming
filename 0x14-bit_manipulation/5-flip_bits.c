@@ -6,8 +6,7 @@
   * @n: number
   * @m: number
   *
-  * Return: eturns the number of bits you 
-  * would need to flip to get from one number to another.
+  * Return: eturns the number of bits.
   */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
