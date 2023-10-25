@@ -10,4 +10,6 @@ clean: $(RM)
 oclean: $(RM)
 	$(RM) $(OBJ)
 fclean: clean oclean
+
 re: oclean all
+
