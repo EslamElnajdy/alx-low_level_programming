@@ -3,9 +3,19 @@
 
 
 def island_perimeter(grid):
-    n = 0
+    length = 0
+    width = 0
     for i in grid:
+        temp_w = 0
         for j in i:
-            n += j
-    return (n + 1) * 2
+            if j == 1:
+                length += 1
+                break
+        for k in i:
+            if k == 1:
+                temp_w += 1
+        if temp_w > width:
+            width = temp_w
+
+    return (length + width) * 2
 
