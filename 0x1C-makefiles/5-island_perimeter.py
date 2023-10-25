@@ -3,6 +3,7 @@
 
 
 def island_perimeter(grid):
+    """fun doc"""
     length = 0
     width = 0
     for i in grid:
